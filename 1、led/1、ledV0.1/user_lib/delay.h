@@ -4,7 +4,7 @@
   * @author  Z B T
   * @version V0.1
   * @date    2016-
-  * @brief   延时函数 SysTick精确延时和粗略延时
+  * @brief   粗略延时函数 
   *
   */  
 
