@@ -11,8 +11,8 @@
 #include "delay.h"
 
 /**
- *  @brief  ´ÖÂÔÑÓÊ±n us
- *  @param  None
+ *  @brief   å»¶æ—¶n_us
+ *  @param  [in]n_us	ç²—ç•¥å»¶æ—¶
  *  @return None
  */
 void delay_n_us(uint32_t n_us)
@@ -27,8 +27,8 @@ void delay_n_us(uint32_t n_us)
 }
 
 /**
- *  @brief  ´ÖÂÔÑÓÊ±n ms
- *  @param  None
+ *  @brief  å»¶æ—¶n_ms
+ *  @param  [in] n_ms ç²—ç•¥å»¶æ—¶
  *  @return None
  */
 void delay_n_ms(uint32_t n_ms)
