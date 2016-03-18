@@ -1,10 +1,10 @@
 /**
   *
-  * @file    delay.h 
-  * @author  Z B T
-  * @version V0.1
-  * @date    2016-
-  * @brief   粗略产生延时 
+  * @file       delay.h 
+  * @author     Z B T
+  * @version    V0.1
+  * @date       2016-
+  * @brief      粗略产生延时
   *
   */  
 
