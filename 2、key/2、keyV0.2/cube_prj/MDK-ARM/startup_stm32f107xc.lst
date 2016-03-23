@@ -592,11 +592,11 @@ ARM Macro Assembler    Page 10
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=cube_prj\startup_stm32f107xc.d -ocube_prj\startup_stm32f107xc.o -I
-F:\MDK_STM32\STM32CubeMX\2、key\3、keyV0.2.1\cube_prj\MDK-ARM\RTE -IC:\mySoftwa
-re\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include -IC:\mySoftware\MDK\ARM\PACK\Keil
-\STM32F1xx_DFP\1.1.0\Device\Include --predefine="__MICROLIB SETA 1" --predefine
-="__UVISION_VERSION SETA 516" --predefine="_RTE_ SETA 1" --predefine="STM32F10X
-_CL SETA 1" --list=startup_stm32f107xc.lst startup_stm32f107xc.s
+F:\MDK_STM32\2、STM32CubeMX\STM32F107VCT6\2、key\2、keyV0.2\cube_prj\MDK-ARM\RT
+E -ID:\MySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include -ID:\MySoftware\MD
+K\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include --predefine="__MICROLIB SETA
+ 1" --predefine="__UVISION_VERSION SETA 518" --predefine="_RTE_ SETA 1" --prede
+fine="STM32F10X_CL SETA 1" --list=startup_stm32f107xc.lst startup_stm32f107xc.s
 
 
 
