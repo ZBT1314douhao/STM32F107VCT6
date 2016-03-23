@@ -38,29 +38,31 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 
 /**
- *  @brief  外部中断初始化函数
+ *  @brief  外部中断0 中断服务程序
  *  @param 	None	
  *  @return None
  */
 static void EXTI0_ISR(void)
 {
-    led_on(LED_0 | LED_1);
-    delay_n_ms(200);
-    led_off(LED_0 | LED_1);
-    delay_n_ms(200);
+    led_on(LED_0);
+//    led_on(LED_0 | LED_1);
+//    delay_n_ms(200);
+//    led_off(LED_0 | LED_1);
+//    delay_n_ms(200);
 }
 
 /**
- *  @brief  延时n_ms
- *  @param  [in] n_ms 粗略延时
+ *  @brief  外部中断13 中断服务程序
+ *  @param  None
  *  @return None
  */
 static void EXTI13_ISR(void)
 {
-    led_on(LED_2 | LED_3);
-    delay_n_ms(100);
-    led_off(LED_2 | LED_3);
-    delay_n_ms(100);
+    led_off(LED_0);
+//    led_on(LED_2 | LED_3);
+//    delay_n_ms(100);
+//    led_off(LED_2 | LED_3);
+//    delay_n_ms(100);
 }
 
 
