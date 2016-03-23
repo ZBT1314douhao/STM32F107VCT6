@@ -34,10 +34,10 @@ enum KEY key_read(void)
     
     if (key_value != NO_KEY)
     {
-        delay_n_ms(100);
+        delay_n_ms(20);
         while (key_press_down() != NO_KEY)
         {
-            delay_n_ms(50);
+            delay_n_ms(20);
         }
     }
     
