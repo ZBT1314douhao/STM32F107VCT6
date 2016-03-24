@@ -4,7 +4,7 @@
   * @author  Z B T
   * @version V0.1
   * @date    2016-
-  * @brief   
+  * @brief   粗略延时函数
   *
   */  
 
