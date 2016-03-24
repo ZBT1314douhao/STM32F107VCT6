@@ -4,7 +4,7 @@
   * @author     Z B T
   * @version    V0.1
   * @date       2016-
-  * @brief      ´ÖÂÔÑÓÊ±
+  * @brief      ç²—ç•¥å»¶æ—¶å‡½æ•°
   *
   */  
 
