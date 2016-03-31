@@ -81,7 +81,7 @@ void TIM6_IRQHandler(void)
   HAL_TIM_IRQHandler(&htim6);
   /* USER CODE BEGIN TIM6_IRQn 1 */
     
-    set_timer_flag(TIMER_6);
+    set_timer_flag(TIMER_6);        /**< 1Sʱ�䵽 */
     
   /* USER CODE END TIM6_IRQn 1 */
 }

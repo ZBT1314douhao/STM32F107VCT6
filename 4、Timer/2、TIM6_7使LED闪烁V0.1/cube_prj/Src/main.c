@@ -96,13 +96,12 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-      if (read_timer_flag(TIMER_6))
+      if (read_timer_flag(TIMER_7))
       {     /**< 利用基本定时器6作为延时 实现led闪烁 */
-          led_on(LED_ALL);
-          delay_n_ms(1000);
-          led_off(LED_ALL);
-          delay_n_ms(1000);
-      } 
+          led_on(LED_ALL);  
+      }
+        
+
   }
   /* USER CODE END 3 */
 
