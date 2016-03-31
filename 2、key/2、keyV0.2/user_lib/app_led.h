@@ -1,6 +1,6 @@
 /** 
  *  @file       app_led.h
- *  @brief      按键控制led显示功能
+ *  @brief      led搴旂敤绋嬪簭
  *  @author     zbt        
  *  @version    V0.1
  *  @date       2016
