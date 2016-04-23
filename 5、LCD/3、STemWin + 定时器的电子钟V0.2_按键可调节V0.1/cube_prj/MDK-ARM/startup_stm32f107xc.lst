@@ -593,11 +593,11 @@ ARM Macro Assembler    Page 10
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=cube_prj\startup_stm32f107xc.d -ocube_prj\startup_stm32f107xc.o -I
 "F:\MDK_STM32\2、STM32CubeMX\STM32F107VCT6\5、LCD\3、STemWin + 定时器的电子钟V0
-.2_按键可调节\cube_prj\MDK-ARM\RTE" -IC:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.
-0\CMSIS\Include -IC:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\In
-clude --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 516" 
---predefine="_RTE_ SETA 1" --predefine="STM32F10X_CL SETA 1" --list=startup_stm
-32f107xc.lst startup_stm32f107xc.s
+.2_按键可调节V0.1\cube_prj\MDK-ARM\RTE" -ID:\MySoftware\MDK\ARM\PACK\ARM\CMSIS\
+4.5.0\CMSIS\Include -ID:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Devic
+e\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 5
+18" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_CL SETA 1" --list=startup
+_stm32f107xc.lst startup_stm32f107xc.s
 
 
 

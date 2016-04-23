@@ -62,11 +62,11 @@ void clock_run(void)
 //        if (i > 2)
 //        {
             sec++;
-            if (sec > 60)
+            if (sec > 59)
             {
                 sec = 0;
                 min++;
-                if (min > 60)
+                if (min > 59)
                 {
                     min = 0;
                     hour++;
