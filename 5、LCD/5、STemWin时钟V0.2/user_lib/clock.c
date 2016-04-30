@@ -20,6 +20,7 @@ static enum  CLOCK_STATE  clock_state = CLOCK_RUN;
 
 static void GUI_DisplayClock(void);
 
+
 /**
  *  @Brief  电子钟主程序
  *  @param  None
@@ -84,9 +85,6 @@ void clock_run(void)
     }
     
     GUI_DisplayClock();
-    
-
-    
 }
 /**
  *  @Brief  电子钟秒针调整界面
@@ -154,40 +152,26 @@ void clock_hour_adj(void)
     default:
         break;
     }
+}
+
+/**
+ *  @Brief  得到当前时钟值
+ *  @param  None
+ *  @return 时钟结构体的值
+ */
+struct CLOCK_VALUE get_clock_value(void)
+{
+    struct CLOCK_VALUE clock_value;
     
-
+    clock_value.sec  = sec;
+    clock_value.min  = min;
+    clock_value.hour = hour;
+    
+    return clock_value;
 }
 
-/**
- *  @Brief  得到当前秒
- *  @param  None
- *  @return 当前秒的值
- */
-uint8_t get_clock_sec(void)
-{
-    return sec;
-}
 
-/**
- *  @Brief  得到当前分
- *  @param  None
- *  @return 当前分的值
- */
-uint8_t get_clock_min(void)
-{
-    return min;
-}
-
-/**
- *  @Brief  得到当前秒
- *  @param  None
- *  @return 当前秒的值
- */
-uint8_t get_clock_hour(void)
-{
-    return hour;
-}
-
+/**< --------------------------------- 私有函数 --------------------------------- */
 /**
  *  @Brief  时钟显示界面
  *  @param  None

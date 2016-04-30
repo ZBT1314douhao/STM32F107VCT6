@@ -661,7 +661,7 @@ I (../Inc/crc.h)(0x57175F64)
 I (../Inc/tim.h)(0x57175F64)
 I (../Inc/gpio.h)(0x57175F63)
 I (..\..\user_lib\delay.h)(0x5707C084)
-I (..\..\user_lib\clock.h)(0x5717648C)
+I (..\..\user_lib\clock.h)(0x571DCEC0)
 I (..\..\user_lib\tim_dup.h)(0x56FB7A3A)
 I (..\..\user_lib\lcd_ssd1289.h)(0x57086D12)
 I (..\..\STemWinLibrary522\inc\gui.h)(0x547A6F98)
@@ -731,8 +731,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x56E9396E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x56E9396E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x56E9396E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x56E9396E)
-F (..\..\user_lib\clock.c)(0x57188E79)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I..\..\user_lib -I..\..\STemWinLibrary522\Config -I..\..\STemWinLibrary522\OS -I..\..\STemWinLibrary522\inc --C99-I F:\MDK_STM32\2、STM32CubeMX\STM32F107VCT6\5、LCD\5、STemWin时钟V0.2\cube_prj\MDK-ARM\RTE-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_CL -DUSE_HAL_DRIVER -DSTM32F107xC-o cube_prj\clock.o --omf_browse cube_prj\clock.crf --depend cube_prj\clock.d)
-I (..\..\user_lib\clock.h)(0x5717648C)
+F (..\..\user_lib\clock.c)(0x571DCFED)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I..\..\user_lib -I..\..\STemWinLibrary522\Config -I..\..\STemWinLibrary522\OS -I..\..\STemWinLibrary522\inc --C99-I F:\MDK_STM32\2、STM32CubeMX\STM32F107VCT6\5、LCD\5、STemWin时钟V0.2\cube_prj\MDK-ARM\RTE-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_CL -DUSE_HAL_DRIVER -DSTM32F107xC-o cube_prj\clock.o --omf_browse cube_prj\clock.crf --depend cube_prj\clock.d)
+I (..\..\user_lib\clock.h)(0x571DCEC0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x56E9396E)
 I (../Inc/stm32f1xx_hal_conf.h)(0x57175F64)
 I (../Inc/mxconstants.h)(0x57175F65)
@@ -770,7 +770,7 @@ I (..\..\STemWinLibrary522\inc\GUI_Type.h)(0x547A6F98)
 I (..\..\STemWinLibrary522\inc\LCD.h)(0x547A6F98)
 I (..\..\STemWinLibrary522\inc\Global.h)(0x547A6F98)
 I (..\..\STemWinLibrary522\inc\GUI_Version.h)(0x547A6F98)
-F (..\..\user_lib\gui_clock.c)(0x57187FA9)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I..\..\user_lib -I..\..\STemWinLibrary522\Config -I..\..\STemWinLibrary522\OS -I..\..\STemWinLibrary522\inc --C99-I F:\MDK_STM32\2、STM32CubeMX\STM32F107VCT6\5、LCD\5、STemWin时钟V0.2\cube_prj\MDK-ARM\RTE-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_CL -DUSE_HAL_DRIVER -DSTM32F107xC-o cube_prj\gui_clock.o --omf_browse cube_prj\gui_clock.crf --depend cube_prj\gui_clock.d)
+F (..\..\user_lib\gui_clock.c)(0x571DD06D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I..\..\user_lib -I..\..\STemWinLibrary522\Config -I..\..\STemWinLibrary522\OS -I..\..\STemWinLibrary522\inc --C99-I F:\MDK_STM32\2、STM32CubeMX\STM32F107VCT6\5、LCD\5、STemWin时钟V0.2\cube_prj\MDK-ARM\RTE-I C:\mySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_CL -DUSE_HAL_DRIVER -DSTM32F107xC-o cube_prj\gui_clock.o --omf_browse cube_prj\gui_clock.crf --depend cube_prj\gui_clock.d)
 I (..\..\user_lib\gui_clock.h)(0x5717686C)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x56E9396E)
 I (../Inc/stm32f1xx_hal_conf.h)(0x57175F64)
@@ -799,7 +799,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x56E9396E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x56E9396E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x56E9396E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x56E9396E)
-I (..\..\user_lib\clock.h)(0x5717648C)
+I (..\..\user_lib\clock.h)(0x571DCEC0)
 I (..\..\STemWinLibrary522\inc\gui.h)(0x547A6F98)
 I (..\..\STemWinLibrary522\inc\GUI_ConfDefaults.h)(0x547A6F98)
 I (..\..\STemWinLibrary522\Config\GUIConf.h)(0x547A6F98)

@@ -32,9 +32,8 @@ static uint16_t coor_x_min_pointer, coor_y_min_pointer;
 static uint16_t coor_x_sec_pointer, coor_y_sec_pointer;
 
 static void set_clock_pointer(void);
-static void clear_clock_sec_pointer(void);
-static void clear_clock_min_pointer(void);
-static void clear_clock_hour_pointer(void);
+static void clear_clock_pointer(void);
+
 
 /**
  *  @brief  绘制时钟外形
@@ -49,8 +48,8 @@ void draw_clock(void)
     uint16_t end_x_hour, end_y_hour;;
     uint16_t end_x_min, end_y_min;
     
-    GUI_SetPenSize(12);         /**< 绘制中心点 */
-    GUI_DrawPoint(circle[0].center_x, circle[0].center_y);
+//    GUI_SetPenSize(12);         /**< 绘制中心点 */
+//    GUI_DrawPoint(circle[0].center_x, circle[0].center_y);
     for (i = 0; i < 2; i++)
     {   /**< 绘制时钟内外圆 */
         GUI_DrawCircle(circle[0].center_x, circle[0].center_y, circle[0].raduis);
@@ -134,25 +133,16 @@ void draw_clock(void)
 void display_clock()
 {
     int8_t sec, min, hour;
-//    uint16_t coor_x_hour, coor_y_hour;
-//    uint16_t coor_x_min, coor_y_min;
-    
-    delay_n_ms(800);
-    clear_clock_sec_pointer();
-    clear_clock_min_pointer();
-    clear_clock_hour_pointer();
-    sec  = get_clock_sec();
-    min  = get_clock_min();
-    hour = get_clock_hour();
+    struct CLOCK_VALUE clock;
+  
+    clock = get_clock_value();
+    sec   = clock.sec;
+    min   = clock.min;
+    hour  = clock.hour;
     /**< 坐标补偿 因时钟坐标和所建立的坐标有90度的相位差 */
-    sec -= 14;
+    sec -= 15;
     min -= 15;
     hour -= 3;
-
-//    coor_x_min  = circle[0].center_x + circle[0].raduis * COS_MIN_SPACE(min);
-//    coor_y_min  = circle[0].center_y + circle[0].raduis * SIN_MIN_SPACE(min);
-//    coor_x_hour = circle[0].center_x + circle[0].raduis * COS_HOUR_SPACE(hour);
-//    coor_y_hour = circle[0].center_y + circle[0].raduis * SIN_HOUR_SPACE(hour);
     
     coor_x_hour_pointer = circle[0].center_x + (circle[0].raduis - 20) * COS_HOUR_SPACE(hour);
     coor_y_hour_pointer = circle[0].center_y + (circle[0].raduis - 20) * SIN_HOUR_SPACE(hour);
@@ -160,7 +150,10 @@ void display_clock()
     coor_y_min_pointer =  circle[0].center_y + (circle[0].raduis - 6)  * SIN_MIN_SPACE(min);
     coor_x_sec_pointer  = circle[0].center_x + (circle[0].raduis - 0)  * COS_MIN_SPACE(sec);
     coor_y_sec_pointer  = circle[0].center_y + (circle[0].raduis - 0)  * SIN_MIN_SPACE(sec);
+    
     set_clock_pointer();
+    delay_n_ms(800);
+    clear_clock_pointer();
 }
 
 /**< ------------------------ 私有函数 ---------------------------------------- */
@@ -175,19 +168,16 @@ static void set_clock_pointer(void)
     GUI_SetPenSize(4);
     GUI_SetBkColor(GUI_BLACK);
     GUI_SetColor(GUI_GREEN);
-//    GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_hour, coor_y_hour);  
     GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_hour_pointer, coor_y_hour_pointer);  
     /**< 分钟 指针 */
     GUI_SetPenSize(2);
     GUI_SetBkColor(GUI_BLACK);
-    GUI_SetColor(GUI_CYAN);
-//    GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_min, coor_y_min);    
+    GUI_SetColor(GUI_CYAN);  
     GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_min_pointer, coor_y_min_pointer);  
     /**< 秒 指针 */
     GUI_SetPenSize(1);
     GUI_SetBkColor(GUI_BLACK);
     GUI_SetColor(GUI_WHITE);
-//    GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_sec, coor_y_sec); 
     GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_sec_pointer, coor_y_sec_pointer); 
 }
 
@@ -196,44 +186,25 @@ static void set_clock_pointer(void)
  *  @param  None
  *  @return None
  */
-static void clear_clock_hour_pointer(void)
+static void clear_clock_pointer(void)
 {
     /**< 小时 指针 */
     GUI_SetPenSize(4);
     GUI_SetBkColor(GUI_BLACK);
     GUI_SetColor(GUI_BLACK);
-    GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_hour_pointer, coor_y_hour_pointer);  
-}
-
-/**
- *  @brief  清除时钟走过的轨迹 分
- *  @param  None
- *  @return None
- */
-static void clear_clock_min_pointer(void)
-{
+    GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_hour_pointer, coor_y_hour_pointer);    
     /**< 分钟 指针 */
     GUI_SetPenSize(2);
     GUI_SetBkColor(GUI_BLACK);
     GUI_SetColor(GUI_BLACK);
     GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_min_pointer, coor_y_min_pointer);    
-
-}
-
-/**
- *  @brief  清除时钟走过的轨迹 秒
- *  @param  None
- *  @return None
- */
-static void clear_clock_sec_pointer(void)
-{   
     /**< 秒 指针 */
     GUI_SetPenSize(1);
     GUI_SetBkColor(GUI_BLACK);
     GUI_SetColor(GUI_BLACK);
-//    GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_sec, coor_y_sec); 
     GUI_DrawLine(circle[0].center_x, circle[0].center_y, coor_x_sec_pointer, coor_y_sec_pointer); 
 }
+
 
 
 
