@@ -97,8 +97,8 @@ int main(void)
     
     GUI_Init();
     GUI_UC_SetEncodeUTF8();        
-    GUI_SetBkColor(GUI_BLACK);   
-    GUI_SetColor(GUI_BLUE);      
+//    GUI_SetBkColor(GUI_WHITE);   
+    
     
 
     draw_clock();
