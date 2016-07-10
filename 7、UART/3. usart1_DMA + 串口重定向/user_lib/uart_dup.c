@@ -31,7 +31,7 @@ void uart1_send_data(void)
     /**< 可以选择同时发送多个或者一个数据 */
     HAL_UART_Transmit_DMA(&huart1, &uart_tx_cmd, UART_BUFF_SIZE);
 //    HAL_UART_Transmit_DMA(&huart1, uart_tx_cmd, PRINTF_BUFF_SIZE);
-    delay_n_ms(5);
+    delay_n_ms(10);
 }
 
 /**

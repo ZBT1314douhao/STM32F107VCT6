@@ -99,13 +99,17 @@ int main(void)
     HAL_TIM_Base_Start_IT(&htim7);
     
     GUI_Init();
-    GUI_UC_SetEncodeUTF8();        
-    GUI_SetBkColor(GUI_BLACK);   
-    GUI_SetColor(GUI_BLUE);      
+    GUI_UC_SetEncodeUTF8(); 
+    GUI_SetFont(&GUI_Font8x16);
+    GUI_SetBkColor(GUI_RED);   
+    GUI_SetColor(GUI_WHITE);    
+    /** 显示透明文本 */
+    GUI_SetTextMode( GUI_TEXTMODE_TRANS/** | GUI_TEXTMODE_REV */);
+    
 //    GUI_DrawBitmap(&bmxll, 10, 10);
-    GUI_DrawBitmap(&bmzbt, 10, 10);
-//    GUI_DrawBitmap(&bmpic_summer, 10, 10);
-    draw_clock();
+//    GUI_DrawBitmap(&bmzbt, 10, 10);
+    GUI_DrawBitmap(&bmpic_summer, 10, 10);
+//    draw_clock();
     
   /* USER CODE END 2 */
 
@@ -114,8 +118,11 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
-        clock();
-      display_clock();
+          GUI_DispStringAt("I am ZBT", 20, 20);
+//          GUI_DrawBitmap(&bmpic_summer, 10, 10);
+
+//        clock();
+//      display_clock();
   /* USER CODE BEGIN 3 */
 
   }

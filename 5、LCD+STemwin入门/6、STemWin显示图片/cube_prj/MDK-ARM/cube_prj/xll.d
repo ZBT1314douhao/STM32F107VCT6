@@ -1,5 +1,5 @@
 cube_prj\xll.o: ..\..\STemWinLibrary522\xll.c
-cube_prj\xll.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+cube_prj\xll.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
 cube_prj\xll.o: ..\..\STemWinLibrary522\inc\GUI.h
 cube_prj\xll.o: ..\..\STemWinLibrary522\inc\GUI_ConfDefaults.h
 cube_prj\xll.o: ..\..\STemWinLibrary522\Config\GUIConf.h

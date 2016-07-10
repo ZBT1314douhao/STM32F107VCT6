@@ -54,10 +54,10 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-#define UART_BUFF_SIZE  1
+
 //#pragma diag_suppress 77,550,1294,1295 
 #pragma diag_suppress 870   /**< 排除非法字符串警告 */
-//static __IO uint16_t uart_buff[UART_BUFF_SIZE];
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

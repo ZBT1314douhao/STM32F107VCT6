@@ -21,6 +21,7 @@
 #define COS_MIN_SPACE(x)    cos((double)x * PI / 30.00)
 #define SIN_MIN_SPACE(x)    sin((double)x * PI / 30.00)
 
+
 const struct CIRCLE_INIT circle[] = 
 {
     150, 120, 72,       /**< 内圆 */

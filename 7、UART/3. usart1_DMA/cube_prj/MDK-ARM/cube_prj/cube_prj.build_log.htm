@@ -22,16 +22,19 @@ Dialog DLL:      TCM.DLL V1.14.8.0
  
 <h2>Project:</h2>
 F:\MDK_STM32\2¡¢STM32CubeMX\STM32F107VCT6\7¡¢UART\3. usart1_DMA\cube_prj\MDK-ARM\cube_prj.uvprojx
-Project File Date:  05/22/2016
+Project File Date:  06/07/2016
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\mySoftware\MDK\ARM\ARMCC\Bin'
 Build target 'cube_prj'
 compiling uart_dup.c...
+..\..\user_lib\uart_dup.c(17): warning:  #177-D: variable "uart_tx_cmd" was declared but never referenced
+  static uint8_t uart_tx_cmd = 0x01;
+..\..\user_lib\uart_dup.c: 1 warning, 0 errors
 linking...
-Program Size: Code=33900 RO-data=12092 RW-data=272 ZI-data=51192  
+Program Size: Code=33896 RO-data=12088 RW-data=272 ZI-data=51192  
 FromELF: creating hex file...
-"cube_prj\cube_prj.axf" - 0 Error(s), 0 Warning(s).
+"cube_prj\cube_prj.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -49,7 +52,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

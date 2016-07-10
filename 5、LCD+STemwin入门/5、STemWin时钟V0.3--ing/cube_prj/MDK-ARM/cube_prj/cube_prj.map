@@ -5346,34 +5346,34 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       484         44          0          4          0       4067   clock.o
-        60         18          0          8          0       1511   crc.o
-        44          0          0          0          0       1056   delay.o
-       176         18          0          0          0       1015   gpio.o
-      1264        160          0         12          0       4601   gui_clock.o
-         4          0          0          0          0        946   gui_x.o
-        32         10          0          0      50000      47160   guiconf.o
-        74          4         16          0          0       2221   key.o
-      1158         78          0          0          0       7505   lcd_ssd1289.o
-       208         34          0          0          0       6872   lcdconf_flexcolor_template.o
-       196         10          0          0          0       2056   main.o
-        36          8        336          0        512        800   startup_stm32f107xc.o
-       120         16          0          4          0       3842   stm32f1xx_hal.o
-       228         14          0          0          0      27705   stm32f1xx_hal_cortex.o
-        34          0          0          0          0       1099   stm32f1xx_hal_crc.o
-         0          0          0          0          0     329944   stm32f1xx_hal_flash.o
-       464         36          0          0          0       3811   stm32f1xx_hal_gpio.o
-       108         10          0          0          0        902   stm32f1xx_hal_msp.o
-      2874         82         16          0          0       5654   stm32f1xx_hal_rcc.o
-       562         18          0          0          0       7083   stm32f1xx_hal_tim.o
-        84          0          0          0          0       2462   stm32f1xx_hal_tim_ex.o
-        38          6          0          0          0       1000   stm32f1xx_it.o
-        84         16          0          4          0       1441   system_stm32f1xx.o
-       112         18          0          0         60       1638   tim.o
-        28          8          0          2          0       2011   tim_dup.o
+       484         44          0          4          0       4171   clock.o
+        60         18          0          8          0       1563   crc.o
+        44          0          0          0          0       1080   delay.o
+       176         18          0          0          0       1039   gpio.o
+      1264        160          0         12          0       4697   gui_clock.o
+         4          0          0          0          0        978   gui_x.o
+        32         10          0          0      50000      47212   guiconf.o
+        74          4         16          0          0       2289   key.o
+      1158         78          0          0          0       7657   lcd_ssd1289.o
+       208         34          0          0          0       6984   lcdconf_flexcolor_template.o
+       196         10          0          0          0       2108   main.o
+        36          8        336          0        512        812   startup_stm32f107xc.o
+       120         16          0          4          0       3938   stm32f1xx_hal.o
+       228         14          0          0          0      27825   stm32f1xx_hal_cortex.o
+        34          0          0          0          0       1123   stm32f1xx_hal_crc.o
+         0          0          0          0          0     330068   stm32f1xx_hal_flash.o
+       464         36          0          0          0       3875   stm32f1xx_hal_gpio.o
+       108         10          0          0          0        930   stm32f1xx_hal_msp.o
+      2874         82         16          0          0       5734   stm32f1xx_hal_rcc.o
+       562         18          0          0          0       7227   stm32f1xx_hal_tim.o
+        84          0          0          0          0       2522   stm32f1xx_hal_tim_ex.o
+        38          6          0          0          0       1032   stm32f1xx_it.o
+        84         16          0          4          0       1477   system_stm32f1xx.o
+       112         18          0          0         60       1690   tim.o
+        28          8          0          2          0       2079   tim_dup.o
 
     ----------------------------------------------------------------------
-      8488        608        400         36      50572     468402   Object Totals
+      8488        608        400         36      50572     470110   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         16          0          0          2          0          0   (incl. Padding)
 
@@ -5521,8 +5521,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     37284       2060       7084        292      51100     473962   Grand Totals
-     37284       2060       7084        292      51100     473962   ELF Image Totals
+     37284       2060       7084        292      51100     475670   Grand Totals
+     37284       2060       7084        292      51100     475670   ELF Image Totals
      37284       2060       7084        292          0          0   ROM Totals
 
 ==============================================================================

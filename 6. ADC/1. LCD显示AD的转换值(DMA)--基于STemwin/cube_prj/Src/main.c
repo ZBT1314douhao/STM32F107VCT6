@@ -81,7 +81,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-    uint16_t mV = 0;
+    uint16_t voltage = 0;
     
   /* USER CODE END 1 */
 
@@ -125,12 +125,12 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
-    mV = ADC_get_value();
-    GUI_DispDecAt(mV / 1000,      120, 150, 1);  /**< 电压整数值 */      
-    GUI_DispDecAt(mV % 1000 / 10, 145, 150, 2);  /**< 2位小数 */   
-    delay_n_ms(200);
-  /* USER CODE BEGIN 3 */
 
+  /* USER CODE BEGIN 3 */
+        voltage = ADC_get_value();
+        GUI_DispDecAt(voltage / 1000,      120, 150, 1);  /**< 电压整数值 */      
+        GUI_DispDecAt(voltage % 1000 / 10, 145, 150, 2);  /**< 2位小数 */     
+        delay_ms(200); 
   }
   /* USER CODE END 3 */
 

@@ -82,7 +82,7 @@ void ADC1_2_IRQHandler(void)
   /* USER CODE END ADC1_2_IRQn 0 */
   HAL_ADC_IRQHandler(&hadc1);
   /* USER CODE BEGIN ADC1_2_IRQn 1 */
-    set_adc_flag(ADC1_IN10);
+
   /* USER CODE END ADC1_2_IRQn 1 */
 }
 
@@ -94,7 +94,7 @@ void TIM7_IRQHandler(void)
   /* USER CODE BEGIN TIM7_IRQn 0 */
 
   /* USER CODE END TIM7_IRQn 0 */
-//  HAL_TIM_IRQHandler(&htim7);
+  HAL_TIM_IRQHandler(&htim7);
   /* USER CODE BEGIN TIM7_IRQn 1 */
 //    set_timer_flag(TIMER_7);
   /* USER CODE END TIM7_IRQn 1 */

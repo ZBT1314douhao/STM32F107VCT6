@@ -95,7 +95,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_CRC_Init();
-//  MX_TIM7_Init();
+  MX_TIM7_Init();
   MX_ADC1_Init();
 
   /* USER CODE BEGIN 2 */

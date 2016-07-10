@@ -1,5 +1,5 @@
 cube_prj\pic_summer.o: ..\..\STemWinLibrary522\pic_summer.c
-cube_prj\pic_summer.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+cube_prj\pic_summer.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
 cube_prj\pic_summer.o: ..\..\STemWinLibrary522\inc\GUI.h
 cube_prj\pic_summer.o: ..\..\STemWinLibrary522\inc\GUI_ConfDefaults.h
 cube_prj\pic_summer.o: ..\..\STemWinLibrary522\Config\GUIConf.h
