@@ -81,23 +81,23 @@
       <Books>
         <Book>
           <Number>0</Number>
-          <Title>Base Board Schematics (MCBSTM32C)</Title>
-          <Path>D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c-base-board-schematics.pdf</Path>
+          <Title>Quick Start Guide (MCBSTM32C)</Title>
+          <Path>C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Documents\STM32C_QSG.pdf</Path>
         </Book>
         <Book>
           <Number>1</Number>
-          <Title>Display Board Schematics (MCBSTM32C)</Title>
-          <Path>D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c-display-board-schematics.pdf</Path>
+          <Title>Base Board Schematics (MCBSTM32C)</Title>
+          <Path>C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Documents\mcbstm32c-base-board-schematics.pdf</Path>
         </Book>
         <Book>
           <Number>2</Number>
-          <Title>User Manual (MCBSTM32C)</Title>
-          <Path>D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c.chm</Path>
+          <Title>Display Board Schematics (MCBSTM32C)</Title>
+          <Path>C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Documents\mcbstm32c-display-board-schematics.pdf</Path>
         </Book>
         <Book>
           <Number>3</Number>
-          <Title>Quick Start (MCBSTM32C)</Title>
-          <Path>D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c_quickstart.pdf</Path>
+          <Title>User Manual (MCBSTM32C)</Title>
+          <Path>C:\My Softwares\MDK_520\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Documents\mcbstm32c.chm</Path>
         </Book>
         <Book>
           <Number>4</Number>
@@ -127,7 +127,7 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
-        <nTsel>6</nTsel>
+        <nTsel>3</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -208,6 +208,12 @@
       <Lin2Executable></Lin2Executable>
       <Lin2ConfigFile></Lin2ConfigFile>
       <bLin2Auto>0</bLin2Auto>
+      <DebugDescription>
+        <Enable>1</Enable>
+        <EnableLog>0</EnableLog>
+        <Protocol>2</Protocol>
+        <DbgClock>10000000</DbgClock>
+      </DebugDescription>
     </TargetOption>
   </Target>
 

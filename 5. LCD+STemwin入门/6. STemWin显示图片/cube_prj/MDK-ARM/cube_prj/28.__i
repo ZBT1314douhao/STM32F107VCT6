@@ -1,6 +1,0 @@
--c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ..\..\user_lib -I ..\..\STemWinLibrary522\Config -I ..\..\STemWinLibrary522\OS -I ..\..\STemWinLibrary522\inc --C99
--I F:\MDK_STM32\2°¢STM32CubeMX\STM32F107VCT6\5°¢LCD\3°¢STemWinœ‘ æ∫∫◊÷\cube_prj\MDK-ARM\RTE
--I D:\MySoftware\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
--I D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
--D__UVISION_VERSION="518" -D_RTE_ -DSTM32F10X_CL -DUSE_HAL_DRIVER -DSTM32F107xC
--o cube_prj\28.o --omf_browse cube_prj\28.crf --depend cube_prj\28.d "..\..\STemWinLibrary522\font\28.c"

@@ -1,7 +1,7 @@
 /**
- * @file     led.c
+ * @file    led.c
  * @brief   led驱动程序
- * @author 
+ * @author  zbt
  * @version V0.1 
  * @date    2016-03
  */
@@ -21,8 +21,9 @@ const struct GPIO_LED led[] =
 
 
 /**
- * @brief  点亮led驱动程序 可同时点亮多个 
- * @param val 多个LED组合
+ * @brief   点亮led驱动程序 可同时点亮多个 
+ * @param   val 多个LED组合
+ * @return  None
  * 例如： led_on(LED_0 | LED_1)
  */
 void led_on(uint16_t val) 
@@ -41,6 +42,7 @@ void led_on(uint16_t val)
 /**
  * @brief  熄灭led驱动程序 可同时熄灭多个 
  * @param val 多个LED组合
+ * @return  None
  * 例如： led_off(LED_0 | LED_1)
  */
 void led_off(uint16_t val) 
