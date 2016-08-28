@@ -1,0 +1,12 @@
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\Widget\WIDGET_Edit.c
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\GUI.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\GUI_ConfDefaults.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\Config\GUIConf.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\GUI_Type.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\LCD.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\Global.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\GUI_Version.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\EDIT.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\WM.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\WM_GUI.h
+cube_prj\widget_edit.o: ..\..\STemWinLibrary522\inc\DIALOG_Intern.h

@@ -1,9 +1,9 @@
 /**
- * @file 	led.h
- * @brief  	led驱动程序
- * @author 	王晓荣
- * @version 
- * @date 2014-03-07
+ * @file    led.c
+ * @brief   led驱动程序
+ * @author  zbt
+ * @version V0.1 
+ * @date    2016-03
  */
  
 #ifndef __LED_H

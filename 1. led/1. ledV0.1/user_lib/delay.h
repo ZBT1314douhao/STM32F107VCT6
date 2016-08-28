@@ -1,9 +1,8 @@
 /**
-  *
   * @file       delay.h 
   * @author     Z B T
   * @version    V0.1
-  * @date       2016-
+  * @date       2016-03
   * @brief      ´ÖÂÔÑÓÊ±
   *
   */  

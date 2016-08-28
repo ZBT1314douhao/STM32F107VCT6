@@ -1,9 +1,8 @@
 /**
-  *
   * @file    delay.c 
   * @author  Z B T
   * @version V0.1
-  * @date    2016-
+  * @date    2016-03
   * @brief   
   *
   */  
