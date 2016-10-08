@@ -537,7 +537,7 @@ static void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)
     
     for (i = 0; i < 16; i++)
     {
-        HAL_GPIO_WritePin(GPIOx, (GPIO_PIN_0 << i), binary_value[i]);
+        HAL_GPIO_WritePin(GPIOx, (GPIO_PIN_0 << i), (GPIO_PinState)binary_value[i]);
     }
 }
 

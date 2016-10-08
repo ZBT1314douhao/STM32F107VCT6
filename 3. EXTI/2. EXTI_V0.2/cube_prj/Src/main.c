@@ -91,15 +91,15 @@ int main(void)
   /* USER CODE END WHILE */
   
   /* USER CODE BEGIN 3 */
-        if (read_exti_flag(EXTI_0))
-        {
-            led_on(LED_0);
-        }
-        if (read_exti_flag(EXTI_13))
-        {
-            led_off(LED_0);
-        }
-        /**< 实现按学习板上PA0 led亮 再按PC13 led灭 */
+    if (read_exti_flag(EXTI_0))
+    {
+        led_on(LED_0);
+    }
+    if (read_exti_flag(EXTI_13))
+    {
+        led_off(LED_0);
+    }
+    /**< 实现按学习板上PA0 led亮 再按PC13 led灭 */
   }
   /* USER CODE END 3 */
 

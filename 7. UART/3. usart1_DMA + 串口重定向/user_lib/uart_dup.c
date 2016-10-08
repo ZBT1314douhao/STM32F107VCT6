@@ -95,7 +95,7 @@ int fputc(int ch, FILE *f)
         delay_n_ms(100);
         while (__HAL_UART_GET_FLAG(&huart1, UART_FLAG_TXE) == RESET);
     }
-         
+    
     return ch;
 }
 
