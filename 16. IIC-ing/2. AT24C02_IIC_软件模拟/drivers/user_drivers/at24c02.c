@@ -1,24 +1,25 @@
 /**
-* @file  at24c02.c
-* @brief at24c02驱动程序
-* @par   date        version    author    remarks
-*        2016-03-21  v1.0       zbt       初次创建
-*
-*/
+  * @file  at24c02.c
+  * @brief at24c02驱动程序
+  * @par   date        version    author    remarks
+  *        2016-03-21  v1.0       zbt       初次创建
+  *
+  */
 
 /** 头文件包含区 ------------------------------------------------ */
 #include "at24c02.h"
 #include "iic_dup.h"
-//#include "delay.h"
 
 /** 私有宏(类型定义) -------------------------------------------- */ 
 #define AT24C02_DEVICE_ADDR         0xA0
+
 #define AT24C02_PAGE_SIZE           8
 #define AT24C02_MEM_SIZE            256
 #define AT24C02_ADDR_BYTE           1
 
 /** 私有变量 --------------------------------------------------- */
-uint8_t test_buffer[AT24C02_MEM_SIZE];
+static uint8_t s_write_buffer[AT24C02_MEM_SIZE];
+static uint8_t s_read_buffer[AT24C02_MEM_SIZE];
 
 /** 外部变量 --------------------------------------------------- */
 
@@ -27,7 +28,6 @@ uint8_t test_buffer[AT24C02_MEM_SIZE];
 static void AT24C02_error_handle(void);
 static void AT24C02_read_test(void);
 static void AT24C02_write_test(void);
-static void AT24C02_erase_test(void);
 
 /** 公有函数 --------------------------------------------------- */
 /**
@@ -43,18 +43,16 @@ void AT24C02_iic_test(void)
     /** 检测总线上是否挂接了IIC设备（此处为AT24C02） */
     if (iic_check_device_status(AT24C02_DEVICE_ADDR) == 0)
     {
-        printf("iic device exists\n");
+        printf("\r\niic device exists\r\n\r\n");
     }
     else
     {
-        printf("no iic device exists\n");
+        printf("\r\nno iic device exists\r\n\r\n");
     }
     
     AT24C02_write_test();
     HAL_Delay(5);
     AT24C02_read_test();
-    HAL_Delay(5);
-    AT24C02_erase_test();
 }
 
 /**
@@ -189,12 +187,12 @@ static void AT24C02_read_test(void)
 {
     uint16_t i;
     
-    AT24C02_read_data(test_buffer, 0, (AT24C02_MEM_SIZE % 10));
+    AT24C02_read_data(s_read_buffer, 0, (AT24C02_MEM_SIZE % 10));
     
-    printf("read data is:\n");
+    printf("read data is:\t");
     for (i = 0; i < (AT24C02_MEM_SIZE % 10); i++)
     {
-        printf("%d ", test_buffer[i]);
+        printf("%d ", s_read_buffer[i]);
     }
     
     printf("\r\nread test ok\r\n");
@@ -209,46 +207,19 @@ static void AT24C02_write_test(void)
 {
     uint16_t i;
     
+    printf("write data is: \t");
     for (i = 0; i < (AT24C02_MEM_SIZE % 10); i++)
     {
-        test_buffer[i] = i;
+        s_write_buffer[i] = i;
+        printf("%d ", s_write_buffer[i]);
     }
     
-    AT24C02_write_data(test_buffer, 0, (AT24C02_MEM_SIZE % 10));
-    
-    printf("write data is:\n");
-    for (i = 0; i < (AT24C02_MEM_SIZE % 10); i++)
-    {
-        printf("%d ", test_buffer[i]);
-    }
+    AT24C02_write_data(s_write_buffer, 0, (AT24C02_MEM_SIZE % 10));
     
     printf("\r\nwrite test ok\r\n");
 }
 
-/**
-  * @brief  AT24C02擦除数据测试
-  * @param  None
-  * @retval None
-  */
-static void AT24C02_erase_test(void)
-{
-    uint16_t i;
-    
-    for (i = 0; i < (AT24C02_MEM_SIZE % 10); i++)
-    {
-        test_buffer[i] = 0xff;
-    }
-    
-    AT24C02_write_data(test_buffer, 0, (AT24C02_MEM_SIZE % 10));
-    
-    printf("erase value is: \n");
-    for (i = 0; i < (AT24C02_MEM_SIZE % 10); i++)
-    {
-        printf("%d ", test_buffer[i]);
-    }
-    
-    printf("\r\nerase test ok\r\n");
-}
+
 /** 以上为测试用程序 ------------------------------------------- */
 
 /**

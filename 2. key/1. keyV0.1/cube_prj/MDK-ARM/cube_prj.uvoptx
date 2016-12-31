@@ -82,22 +82,22 @@
         <Book>
           <Number>0</Number>
           <Title>Base Board Schematics (MCBSTM32C)</Title>
-          <Path>D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c-base-board-schematics.pdf</Path>
+          <Path>C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c-base-board-schematics.pdf</Path>
         </Book>
         <Book>
           <Number>1</Number>
           <Title>Display Board Schematics (MCBSTM32C)</Title>
-          <Path>D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c-display-board-schematics.pdf</Path>
+          <Path>C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c-display-board-schematics.pdf</Path>
         </Book>
         <Book>
           <Number>2</Number>
           <Title>User Manual (MCBSTM32C)</Title>
-          <Path>D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c.chm</Path>
+          <Path>C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c.chm</Path>
         </Book>
         <Book>
           <Number>3</Number>
           <Title>Quick Start (MCBSTM32C)</Title>
-          <Path>D:\MySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c_quickstart.pdf</Path>
+          <Path>C:\mySoftware\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Documents\mcbstm32c_quickstart.pdf</Path>
         </Book>
         <Book>
           <Number>4</Number>
@@ -127,6 +127,7 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
+        <bEvRecOn>1</bEvRecOn>
         <nTsel>6</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
@@ -145,10 +146,6 @@
           <Number>0</Number>
           <Key>DLGTARM</Key>
           <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)</Name>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>DLGUARM</Key>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -234,12 +231,14 @@
       <Lin2Executable></Lin2Executable>
       <Lin2ConfigFile></Lin2ConfigFile>
       <bLin2Auto>0</bLin2Auto>
+      <bAutoGenD>0</bAutoGenD>
+      <bAuto2GenD>0</bAuto2GenD>
     </TargetOption>
   </Target>
 
   <Group>
     <GroupName>Drivers/STM32F1xx_HAL_Driver</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -295,7 +294,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>5</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c</PathWithFileName>

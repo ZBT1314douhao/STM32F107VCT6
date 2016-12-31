@@ -3,7 +3,7 @@
  * @brief   led驱动程序
  * @author  zbt
  * @version V0.1 
- * @date    2016-03
+ * @date    2016/03
  */
 
 #include "led.h"
@@ -58,5 +58,21 @@ void led_off(uint16_t val)
     }     
 }
 
-
-
+/**
+ * @brief   翻转LED状态 
+ * @param   val 多个LED组合
+ * @return  None
+ * @note    例如： led_off(LED_0 | LED_1)
+ */
+void led_toggle(uint16_t val) 
+{
+    uint8_t n;
+    
+    for(n = 0; n < NUM_LEDS; n++)
+    {
+        if (val & (1 << n)) 
+        {
+            HAL_GPIO_TogglePin(led[n].port, led[n].pin);        
+        }        
+    }     
+}

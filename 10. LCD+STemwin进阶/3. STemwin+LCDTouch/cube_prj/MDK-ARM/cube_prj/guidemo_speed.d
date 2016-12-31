@@ -1,5 +1,5 @@
 cube_prj\guidemo_speed.o: ..\..\Demo\GUIDEMO_Speed.c
-cube_prj\guidemo_speed.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+cube_prj\guidemo_speed.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
 cube_prj\guidemo_speed.o: ..\..\Demo\GUIDEMO.h
 cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\GUI.h
 cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\GUI_ConfDefaults.h
@@ -17,7 +17,7 @@ cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\WM_Intern.h
 cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\GUI_Private.h
 cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\LCD_Protected.h
 cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\GUI_Debug.h
-cube_prj\guidemo_speed.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+cube_prj\guidemo_speed.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\SCROLLBAR.h
 cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\WIDGET.h
 cube_prj\guidemo_speed.o: ..\..\STemWinLibrary522\inc\FRAMEWIN.h

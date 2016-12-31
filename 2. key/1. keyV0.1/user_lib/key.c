@@ -58,7 +58,7 @@ static enum KEY key_press_down(void)
         /** 如果检测到按键按下 */
         if (!HAL_GPIO_ReadPin(key[i].port, key[i].pin))
         {
-            key_value = i;
+            key_value = (enum KEY)i;
             break;
         }
     }

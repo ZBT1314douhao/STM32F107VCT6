@@ -106,7 +106,7 @@ int main(void)
 //    GUI_DispStringAt("STemwin OK", 0, 50);	
 
     /** 1：首次运行程序，标定坐标； 标定后，修改为0 */    
-    #if 1                   
+    #if 0                   
         touch_calibrate();
     #else
         GUIDEMO_Main();

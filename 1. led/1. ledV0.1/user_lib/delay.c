@@ -3,7 +3,7 @@
   * @author  Z B T
   * @version V0.1
   * @date    2016-03
-  * @brief   
+  * @brief   延时程序不准 建议使用ST的 HAL_Delay()
   *
   */  
 

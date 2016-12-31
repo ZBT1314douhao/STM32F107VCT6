@@ -16,7 +16,7 @@ cube_prj\guidemo_graph.o: ..\..\STemWinLibrary522\inc\WM_Intern.h
 cube_prj\guidemo_graph.o: ..\..\STemWinLibrary522\inc\GUI_Private.h
 cube_prj\guidemo_graph.o: ..\..\STemWinLibrary522\inc\LCD_Protected.h
 cube_prj\guidemo_graph.o: ..\..\STemWinLibrary522\inc\GUI_Debug.h
-cube_prj\guidemo_graph.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+cube_prj\guidemo_graph.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 cube_prj\guidemo_graph.o: ..\..\STemWinLibrary522\inc\SCROLLBAR.h
 cube_prj\guidemo_graph.o: ..\..\STemWinLibrary522\inc\WIDGET.h
 cube_prj\guidemo_graph.o: ..\..\STemWinLibrary522\inc\FRAMEWIN.h

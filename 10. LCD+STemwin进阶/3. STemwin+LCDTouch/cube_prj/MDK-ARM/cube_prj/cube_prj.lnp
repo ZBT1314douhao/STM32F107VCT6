@@ -17,7 +17,7 @@
 "cube_prj\delay.o"
 "cube_prj\lcd_ssd1289.o"
 "cube_prj\touch.o"
-"cube_prj\system_stm32f1xx_1.o"
+"cube_prj\system_stm32f1xx.o"
 "cube_prj\startup_stm32f107xc.o"
 "cube_prj\gpio.o"
 "cube_prj\stm32f1xx_it.o"

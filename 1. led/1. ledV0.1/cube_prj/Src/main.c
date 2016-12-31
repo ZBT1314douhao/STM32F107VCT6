@@ -36,6 +36,7 @@
 /* USER CODE BEGIN Includes */
 #include "delay.h"
 #include "led.h"
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -63,6 +64,7 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
     uint8_t i = 0;
+    
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -87,9 +89,10 @@ int main(void)
   /* USER CODE END WHILE */
       i = (i >= 3)? 0 : i + 1;
       led_on(LED_0 << i);
-      delay_n_ms(500);
+      HAL_Delay(500);
       led_off(LED_0 << i);
-      delay_n_ms(500);
+      HAL_Delay(500);
+      
   /* USER CODE BEGIN 3 */
 
   }

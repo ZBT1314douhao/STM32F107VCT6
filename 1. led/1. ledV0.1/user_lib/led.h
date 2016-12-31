@@ -3,7 +3,7 @@
  * @brief   led驱动程序
  * @author  zbt
  * @version V0.1 
- * @date    2016-03
+ * @date    2016/03
  */
  
 #ifndef __LED_H
@@ -27,9 +27,9 @@ struct GPIO_LED
 #define	LED_7		0x80
 #define	LED_ALL	    0xFFFF
 
-void    led_on(uint16_t val);
-void    led_off(uint16_t val) ;
-
+void led_on(uint16_t val);
+void led_off(uint16_t val) ;
+void led_toggle(uint16_t val); 
 
 
 #endif 

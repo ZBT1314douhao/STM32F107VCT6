@@ -16,7 +16,7 @@ cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\WM_Intern.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\GUI_Private.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\LCD_Protected.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\GUI_Debug.h
-cube_prj\guidemo_bitmap.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+cube_prj\guidemo_bitmap.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\SCROLLBAR.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\WIDGET.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\FRAMEWIN.h
@@ -29,4 +29,4 @@ cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\GRAPH.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\ICONVIEW.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\LISTVIEW.h
 cube_prj\guidemo_bitmap.o: ..\..\STemWinLibrary522\inc\TREEVIEW.h
-cube_prj\guidemo_bitmap.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\math.h
+cube_prj\guidemo_bitmap.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\math.h

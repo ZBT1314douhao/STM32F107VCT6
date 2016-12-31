@@ -1,7 +1,7 @@
 cube_prj\guidemo_listview.o: ..\..\Demo\GUIDEMO_Listview.c
-cube_prj\guidemo_listview.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
-cube_prj\guidemo_listview.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\string.h
-cube_prj\guidemo_listview.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+cube_prj\guidemo_listview.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+cube_prj\guidemo_listview.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\string.h
+cube_prj\guidemo_listview.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 cube_prj\guidemo_listview.o: ..\..\Demo\GUIDEMO.h
 cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\GUI.h
 cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\GUI_ConfDefaults.h
@@ -19,7 +19,7 @@ cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\WM_Intern.h
 cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\GUI_Private.h
 cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\LCD_Protected.h
 cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\GUI_Debug.h
-cube_prj\guidemo_listview.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+cube_prj\guidemo_listview.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\SCROLLBAR.h
 cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\WIDGET.h
 cube_prj\guidemo_listview.o: ..\..\STemWinLibrary522\inc\FRAMEWIN.h

@@ -1,14 +1,13 @@
 /**
-* @file  iic_dup.c
-* @brief IIC上层程序
-* @par   date        version    author    remarks
-*        2016-03-21  v1.0       zbt       初次创建
-*
-*/
+  * @file  iic_dup.c
+  * @brief IIC上层程序
+  * @par   date        version    author    remarks
+  *        2016-03-21  v1.0       zbt       初次创建
+  *
+  */
 
 /** 头文件包含区 ------------------------------------------------ */
 #include "iic_dup.h"
-#include "delay.h"
 
 /** 私有宏(类型定义) -------------------------------------------- */ 
 #define IIC1_SCL(pin_status)        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, pin_status);
@@ -54,12 +53,9 @@ void iic_start(void)
   */
 void iic_stop(void)
 {
-    IIC1_SCL(GPIO_PIN_RESET);
-    iic_delay();
     /** SDA产生一个上升沿 */
     IIC1_SDA(GPIO_PIN_RESET);
-    iic_delay();
-    
+    iic_delay();    
     IIC1_SCL(GPIO_PIN_SET);
     iic_delay();
     IIC1_SDA(GPIO_PIN_SET);
@@ -71,7 +67,6 @@ void iic_stop(void)
   * @param  None
   * @retval None
   * @note   
-            
   */
 void iic_sendbyte(uint8_t byte)
 {
@@ -146,8 +141,7 @@ uint8_t iic_readbyte(void)
   */
 uint8_t iic_wait_ack(void)
 {
-    uint8_t ack_status = 0;
-    uint32_t timeout_count = 0;
+    uint8_t ack_status = 1;
     
     /** 在等待应答信号之前，要释放总线，即将SDA置位 */
     IIC1_SDA(GPIO_PIN_SET);
@@ -155,7 +149,7 @@ uint8_t iic_wait_ack(void)
     IIC1_SCL(GPIO_PIN_SET);
     iic_delay();
     
-    if (IIC1_SDA_IS_HIGH())
+    if (IIC1_SDA_IS_HIGH())     /**< 设备无应答 */
     {    
         ack_status = 1;
         iic_stop();
@@ -186,7 +180,7 @@ void iic_ack(void)
     IIC1_SCL(GPIO_PIN_RESET);
     iic_delay();
     
-    IIC1_SDA(GPIO_PIN_SET);
+    IIC1_SDA(GPIO_PIN_SET);     /**< 释放SDA总线 */
 }
 
 /**
@@ -219,11 +213,9 @@ uint8_t iic_check_device_status(uint8_t device_addr)
     
     if (IIC1_SCL_IS_HIGH() && IIC1_SDA_IS_HIGH())
     {
-        iic_start();
-        
+        iic_start();       
         iic_sendbyte(device_addr | IIC_WRITE);
         ack_status = iic_wait_ack();
-
         iic_stop();
         
         return ack_status;
@@ -234,19 +226,18 @@ uint8_t iic_check_device_status(uint8_t device_addr)
 
 /** 私有函数 --------------------------------------------------- */
 /**
-  * @brief  用于模拟IIC时的延时
+  * @brief  用于模拟IIC时的简单延时
   * @param  None
   * @retval None
   */
 static void iic_delay(void)
 {
-//    uint8_t i;
-//    
-//    for (i = 0; i < 30; i++);
-    delay_n_us(5);
+    uint8_t i = 0;
+    uint8_t delay = 5;
     
+    while (delay--)
+    {
+        i = 10;
+        while (i--);
+    }
 }
-
-
-
-

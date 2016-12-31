@@ -72,15 +72,15 @@ void w25x16_test(void)
     
     Id = w25x16_read_id(2);     /**< 更改参数（0、1、2）可获得各种ID */
        
-    printf("memory: 0x%X\n", Id.memory);
-    printf("compatibility: 0x%X\n", Id.compatibility);
-    printf("maunfacture: 0x%X\n", Id.maunfacture);
-    printf("device: 0x%X\n", Id.device);
+    printf("memory: 0x%X\r\n", Id.memory);
+    printf("compatibility: 0x%X\r\n", Id.compatibility);
+    printf("maunfacture: 0x%X\r\n", Id.maunfacture);
+    printf("device: 0x%X\r\n", Id.device);
     
     /** 通过以下程序单独获得JEDEC_ID */
     chip_id = get_chip_id();
     
-    printf("chip id: 0x%X", chip_id);
+    printf("chip id: 0x%X\r\n", chip_id);
 }
 
 /**

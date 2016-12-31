@@ -44,9 +44,9 @@
 //#include "app_led.h"
 //#include "exti_dup.h"
 //#include "tim_dup.h"
-#include "uart_dup.h"
-#include "lcd_ssd1289.h" 
-#include "gui.h"            /**< STemwin */
+//#include "lcd_ssd1289.h" 
+//#include "gui.h"            /**< STemwin */
+#include "uart_drv.h"
 
 /* USER CODE END Includes */
 
@@ -54,9 +54,7 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-#define UART_BUFF_SIZE  1
 
-//static __IO uint16_t uart_buff[UART_BUFF_SIZE];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -68,16 +66,15 @@ void SystemClock_Config(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-extern GUI_CONST_STORAGE GUI_FONT GUI_FontYaHei28;
-//extern DMA_HandleTypeDef hdma_usart1_tx;
+//extern GUI_CONST_STORAGE GUI_FONT GUI_FontYaHei28;
+
 /* USER CODE END 0 */
 
 int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-//    uint16_t i = 0;
-    uint16_t cmd;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -96,17 +93,17 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
 
-    GUI_Init();
-    GUI_UC_SetEncodeUTF8();
-     
-    GUI_SetBkColor(GUI_BLACK);
-    GUI_SetColor(GUI_GREEN);
-    
-    GUI_SetFont(&GUI_Font32B_ASCII);
-    GUI_DispStringAt("Display HanZi", 60, 50);	
+//    GUI_Init();
+//    GUI_UC_SetEncodeUTF8();
+//     
+//    GUI_SetBkColor(GUI_BLACK);
+//    GUI_SetColor(GUI_GREEN);
+//    
+//    GUI_SetFont(&GUI_Font32B_ASCII);
+//    GUI_DispStringAt("Display HanZi", 60, 50);	
 
-    GUI_SetFont(&GUI_FontYaHei28); 
-    GUI_DispStringAt("南京工业大学", 80, 100);  
+//    GUI_SetFont(&GUI_FontYaHei28); 
+//    GUI_DispStringAt("南京工业大学", 80, 100);  
  
   /* USER CODE END 2 */
 
@@ -117,19 +114,8 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
-    cmd = uart1_get_recv_cmd();
-    switch (cmd)
-    {
-    case 0x10:
-        led_on(LED_0);
-        uart1_send_data();
-    break;
-    case 0x11:
-        led_off(LED_0);
-        uart1_send_data();
-    break;
-    }
+    uart_test();
+   
   }
   /* USER CODE END 3 */
 

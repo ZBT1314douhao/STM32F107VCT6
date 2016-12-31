@@ -3,7 +3,7 @@
   * @author     Z B T
   * @version    V0.1
   * @date       2016- 03
-  * @brief      外部中断应用程序
+  * @brief      外部中断应用程序 还可利用外部中断的回调函数实现
   *
   */  
 

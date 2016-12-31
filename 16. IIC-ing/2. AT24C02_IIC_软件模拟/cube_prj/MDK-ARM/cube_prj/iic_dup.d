@@ -27,4 +27,3 @@ cube_prj\iic_dup.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 cube_prj\iic_dup.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 cube_prj\iic_dup.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 cube_prj\iic_dup.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-cube_prj\iic_dup.o: ..\..\drivers\board_drivers\delay.h

@@ -1,5 +1,5 @@
 cube_prj\guidemo_imageflow.o: ..\..\Demo\GUIDEMO_ImageFlow.c
-cube_prj\guidemo_imageflow.o: D:\MySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+cube_prj\guidemo_imageflow.o: C:\mySoftware\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 cube_prj\guidemo_imageflow.o: ..\..\Demo\GUIDEMO.h
 cube_prj\guidemo_imageflow.o: ..\..\STemWinLibrary522\inc\GUI.h
 cube_prj\guidemo_imageflow.o: ..\..\STemWinLibrary522\inc\GUI_ConfDefaults.h
